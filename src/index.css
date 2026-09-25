@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: var(--page-bg);
+  color: var(--text-primary);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+:root {
+  --page-bg: #f8fafc;
+  --section-alt-bg: #f1f5f9;
+  --card-bg: #ffffff;
+  --navbar-bg: rgba(255, 255, 255, 0.94);
+  --footer-bg: #0f172a;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --footer-text: #f8fafc;
+  --footer-muted: #94a3b8;
+  --border-color: #e2e8f0;
+  --hover-bg: #eff6ff;
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light-bg: #eff6ff;
+  --primary-light-border: #bfdbfe;
+  --success-color: #16a34a;
+  --code-bg: #0b1120;
+  --shadow-md: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 25px 60px rgba(15, 23, 42, 0.12);
+}
+[data-theme="dark"] {
+  --page-bg: #080d18;
+  --section-alt-bg: #0d1422;
+  --card-bg: #111827;
+  --navbar-bg: rgba(8, 13, 24, 0.95);
+  --footer-bg: #050912;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --footer-text: #f8fafc;
+  --footer-muted: #94a3b8;
+  --border-color: #1e293b;
+  --hover-bg: #172554;
+  --primary-color: #3b82f6;
+  --primary-dark: #2563eb;
+  --primary-light-bg: rgba(37, 99, 235, 0.12);
+  --primary-light-border: rgba(59, 130, 246, 0.3);
+  --success-color: #22c55e;
+  --code-bg: #030712;
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+[data-theme="eye"] {
+  --page-bg: #f7f3df;
+  --section-alt-bg: #eee9cf;
+  --card-bg: #fffdf1;
+  --navbar-bg: rgba(255, 253, 241, 0.96);
+  --footer-bg: #403b2d;
+  --text-primary: #3f3a2f;
+  --text-secondary: #716a58;
+  --footer-text: #fffdf1;
+  --footer-muted: #d5ccb0;
+  --border-color: #ddd5b8;
+  --hover-bg: #eee8ca;
+  --primary-color: #8b6f2f;
+  --primary-dark: #705824;
+  --primary-light-bg: #f1ead0;
+  --primary-light-border: #d8c996;
+  --success-color: #66844a;
+  --code-bg: #29261e;
+  --shadow-md: 0 12px 30px rgba(75, 64, 35, 0.09);
+  --shadow-lg: 0 25px 60px rgba(75, 64, 35, 0.14);
+}

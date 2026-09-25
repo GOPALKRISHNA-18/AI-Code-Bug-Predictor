@@ -1,0 +1,20 @@
+.app-layout {
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+.app-layout-content {
+  min-height: 100vh;
+  margin-left: 250px;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .app-layout-content {
+    margin-left: 220px;
+  }
+}
+@media (max-width: 700px) {
+  .app-layout-content {
+    margin-left: 72px;
+  }
+}
